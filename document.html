@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        let ul = document.querySelector("ul")
+        let parElement = ul.parentElement.nodeName;
+        console.log("il parent è: " + parElement)
+        let secondChild = ul.children[1].innerText;
+        console.log("il secondo fliglio è: " + secondChild)
+        let netxBrother = ul.children[1].nextElementSibling.innerText
+        console.log("il prossimo fratello è: " + netxBrother)
+        let previousBrother = ul.children[1].previousElementSibling.innerText
+        console.log("il fratello precedente è: " + previousBrother)
+    </script>
+</body>
+
+</html>
